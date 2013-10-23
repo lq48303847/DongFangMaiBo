@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1034E26518175FD4001DB075 /* HCHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E26418175FD4001DB075 /* HCHTTP.m */; };
+		1034E27E18176941001DB075 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E26918176941001DB075 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E27F18176941001DB075 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E26C18176941001DB075 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28018176941001DB075 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E26E18176941001DB075 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28118176941001DB075 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E27018176941001DB075 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28218176941001DB075 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E27218176941001DB075 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28318176941001DB075 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E27418176941001DB075 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28418176941001DB075 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E27818176941001DB075 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28518176941001DB075 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E27A18176941001DB075 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28618176941001DB075 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034E27D18176941001DB075 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1034E28818176A71001DB075 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034E28718176A71001DB075 /* libz.dylib */; };
+		1034E28A18176A80001DB075 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034E28918176A80001DB075 /* SystemConfiguration.framework */; };
+		1034E28C18176A8D001DB075 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034E28B18176A8D001DB075 /* libxml2.dylib */; };
+		1034E28E18176A96001DB075 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034E28D18176A96001DB075 /* MobileCoreServices.framework */; };
+		1034E29018176AA0001DB075 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034E28F18176AA0001DB075 /* CFNetwork.framework */; };
+		8455FA7217F1682E00F053EE /* HCReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455FA7117F1682E00F053EE /* HCReminderViewController.m */; };
+		8455FA7617F169B800F053EE /* HCReminderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455FA7517F169B800F053EE /* HCReminderCell.m */; };
+		8455FA7817F169C600F053EE /* HCReminderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8455FA7717F169C600F053EE /* HCReminderCell.xib */; };
+		846D3E7718129BB1008AE97E /* HCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D3E7618129BB1008AE97E /* HCLoginViewController.m */; };
+		846D3E7A18129D6C008AE97E /* HCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846D3E7918129D6C008AE97E /* HCRegisterViewController.m */; };
+		84946E8617F044BE005D5052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84946E8517F044BE005D5052 /* Foundation.framework */; };
+		84946E8817F044BE005D5052 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84946E8717F044BE005D5052 /* CoreGraphics.framework */; };
+		84946E8A17F044BF005D5052 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84946E8917F044BF005D5052 /* UIKit.framework */; };
+		84946E9017F044BF005D5052 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84946E8E17F044BF005D5052 /* InfoPlist.strings */; };
+		84946E9217F044BF005D5052 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946E9117F044BF005D5052 /* main.m */; };
+		84946E9617F044BF005D5052 /* HCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946E9517F044BF005D5052 /* HCAppDelegate.m */; };
+		84946E9917F044BF005D5052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84946E9717F044BF005D5052 /* Main.storyboard */; };
+		84946E9C17F044BF005D5052 /* HCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946E9B17F044BF005D5052 /* HCViewController.m */; };
+		84946E9E17F044BF005D5052 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84946E9D17F044BF005D5052 /* Images.xcassets */; };
+		84946EA517F044BF005D5052 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84946EA417F044BF005D5052 /* XCTest.framework */; };
+		84946EA617F044BF005D5052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84946E8517F044BE005D5052 /* Foundation.framework */; };
+		84946EA717F044BF005D5052 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84946E8917F044BF005D5052 /* UIKit.framework */; };
+		84946EAF17F044BF005D5052 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84946EAD17F044BF005D5052 /* InfoPlist.strings */; };
+		84946EB117F044BF005D5052 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946EB017F044BF005D5052 /* ____Tests.m */; };
+		84946EBD17F047E7005D5052 /* HCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946EBC17F047E7005D5052 /* HCHomeViewController.m */; };
+		84946EC017F052CD005D5052 /* HCHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946EBF17F052CD005D5052 /* HCHealthViewController.m */; };
+		84946EC517F05EEB005D5052 /* HCTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946EC417F05EEB005D5052 /* HCTabViewController.m */; };
+		84946EC817F06310005D5052 /* HCDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84946EC717F06310005D5052 /* HCDoctorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84946EA817F044BF005D5052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84946E7A17F044BE005D5052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84946E8117F044BE005D5052;
+			remoteInfo = "东方脉搏";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1034E26318175FD4001DB075 /* HCHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHTTP.h; sourceTree = "<group>"; };
+		1034E26418175FD4001DB075 /* HCHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHTTP.m; sourceTree = "<group>"; };
+		1034E26818176941001DB075 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		1034E26918176941001DB075 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		1034E26A18176941001DB075 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		1034E26B18176941001DB075 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		1034E26C18176941001DB075 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		1034E26D18176941001DB075 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		1034E26E18176941001DB075 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		1034E26F18176941001DB075 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		1034E27018176941001DB075 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		1034E27118176941001DB075 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		1034E27218176941001DB075 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		1034E27318176941001DB075 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		1034E27418176941001DB075 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		1034E27518176941001DB075 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		1034E27618176941001DB075 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		1034E27718176941001DB075 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		1034E27818176941001DB075 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		1034E27918176941001DB075 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		1034E27A18176941001DB075 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		1034E27B18176941001DB075 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		1034E27C18176941001DB075 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1034E27D18176941001DB075 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1034E28718176A71001DB075 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1034E28918176A80001DB075 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1034E28B18176A8D001DB075 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		1034E28D18176A96001DB075 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1034E28F18176AA0001DB075 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8455FA7017F1682E00F053EE /* HCReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCReminderViewController.h; sourceTree = "<group>"; };
+		8455FA7117F1682E00F053EE /* HCReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCReminderViewController.m; sourceTree = "<group>"; };
+		8455FA7417F169B800F053EE /* HCReminderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCReminderCell.h; sourceTree = "<group>"; };
+		8455FA7517F169B800F053EE /* HCReminderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCReminderCell.m; sourceTree = "<group>"; };
+		8455FA7717F169C600F053EE /* HCReminderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCReminderCell.xib; sourceTree = "<group>"; };
+		846D3E7518129BB1008AE97E /* HCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCLoginViewController.h; sourceTree = "<group>"; };
+		846D3E7618129BB1008AE97E /* HCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCLoginViewController.m; sourceTree = "<group>"; };
+		846D3E7818129D6C008AE97E /* HCRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCRegisterViewController.h; sourceTree = "<group>"; };
+		846D3E7918129D6C008AE97E /* HCRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRegisterViewController.m; sourceTree = "<group>"; };
+		84946E8217F044BE005D5052 /* 东方脉搏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "东方脉搏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84946E8517F044BE005D5052 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84946E8717F044BE005D5052 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84946E8917F044BF005D5052 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84946E8D17F044BF005D5052 /* 东方脉搏-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "东方脉搏-Info.plist"; sourceTree = "<group>"; };
+		84946E8F17F044BF005D5052 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84946E9117F044BF005D5052 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84946E9317F044BF005D5052 /* 东方脉搏-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "东方脉搏-Prefix.pch"; sourceTree = "<group>"; };
+		84946E9417F044BF005D5052 /* HCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAppDelegate.h; sourceTree = "<group>"; };
+		84946E9517F044BF005D5052 /* HCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAppDelegate.m; sourceTree = "<group>"; };
+		84946E9817F044BF005D5052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84946E9A17F044BF005D5052 /* HCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCViewController.h; sourceTree = "<group>"; };
+		84946E9B17F044BF005D5052 /* HCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCViewController.m; sourceTree = "<group>"; };
+		84946E9D17F044BF005D5052 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84946EA317F044BF005D5052 /* 东方脉搏Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "东方脉搏Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84946EA417F044BF005D5052 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84946EAC17F044BF005D5052 /* 东方脉搏Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "东方脉搏Tests-Info.plist"; sourceTree = "<group>"; };
+		84946EAE17F044BF005D5052 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84946EB017F044BF005D5052 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		84946EBB17F047E7005D5052 /* HCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHomeViewController.h; sourceTree = "<group>"; };
+		84946EBC17F047E7005D5052 /* HCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHomeViewController.m; sourceTree = "<group>"; };
+		84946EBE17F052CD005D5052 /* HCHealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHealthViewController.h; sourceTree = "<group>"; };
+		84946EBF17F052CD005D5052 /* HCHealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHealthViewController.m; sourceTree = "<group>"; };
+		84946EC317F05EEB005D5052 /* HCTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabViewController.h; sourceTree = "<group>"; };
+		84946EC417F05EEB005D5052 /* HCTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabViewController.m; sourceTree = "<group>"; };
+		84946EC617F06310005D5052 /* HCDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDoctorViewController.h; sourceTree = "<group>"; };
+		84946EC717F06310005D5052 /* HCDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDoctorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84946E7F17F044BE005D5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1034E29018176AA0001DB075 /* CFNetwork.framework in Frameworks */,
+				1034E28E18176A96001DB075 /* MobileCoreServices.framework in Frameworks */,
+				1034E28C18176A8D001DB075 /* libxml2.dylib in Frameworks */,
+				1034E28A18176A80001DB075 /* SystemConfiguration.framework in Frameworks */,
+				1034E28818176A71001DB075 /* libz.dylib in Frameworks */,
+				84946E8817F044BE005D5052 /* CoreGraphics.framework in Frameworks */,
+				84946E8A17F044BF005D5052 /* UIKit.framework in Frameworks */,
+				84946E8617F044BE005D5052 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84946EA017F044BF005D5052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84946EA517F044BF005D5052 /* XCTest.framework in Frameworks */,
+				84946EA717F044BF005D5052 /* UIKit.framework in Frameworks */,
+				84946EA617F044BF005D5052 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1034E26218175F6A001DB075 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				1034E26318175FD4001DB075 /* HCHTTP.h */,
+				1034E26418175FD4001DB075 /* HCHTTP.m */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		1034E26618176933001DB075 /* 第三方 */ = {
+			isa = PBXGroup;
+			children = (
+				1034E26718176941001DB075 /* ASI */,
+			);
+			name = "第三方";
+			sourceTree = "<group>";
+		};
+		1034E26718176941001DB075 /* ASI */ = {
+			isa = PBXGroup;
+			children = (
+				1034E26818176941001DB075 /* ASIAuthenticationDialog.h */,
+				1034E26918176941001DB075 /* ASIAuthenticationDialog.m */,
+				1034E26A18176941001DB075 /* ASICacheDelegate.h */,
+				1034E26B18176941001DB075 /* ASIDataCompressor.h */,
+				1034E26C18176941001DB075 /* ASIDataCompressor.m */,
+				1034E26D18176941001DB075 /* ASIDataDecompressor.h */,
+				1034E26E18176941001DB075 /* ASIDataDecompressor.m */,
+				1034E26F18176941001DB075 /* ASIDownloadCache.h */,
+				1034E27018176941001DB075 /* ASIDownloadCache.m */,
+				1034E27118176941001DB075 /* ASIFormDataRequest.h */,
+				1034E27218176941001DB075 /* ASIFormDataRequest.m */,
+				1034E27318176941001DB075 /* ASIHTTPRequest.h */,
+				1034E27418176941001DB075 /* ASIHTTPRequest.m */,
+				1034E27518176941001DB075 /* ASIHTTPRequestConfig.h */,
+				1034E27618176941001DB075 /* ASIHTTPRequestDelegate.h */,
+				1034E27718176941001DB075 /* ASIInputStream.h */,
+				1034E27818176941001DB075 /* ASIInputStream.m */,
+				1034E27918176941001DB075 /* ASINetworkQueue.h */,
+				1034E27A18176941001DB075 /* ASINetworkQueue.m */,
+				1034E27B18176941001DB075 /* ASIProgressDelegate.h */,
+				1034E27C18176941001DB075 /* Reachability.h */,
+				1034E27D18176941001DB075 /* Reachability.m */,
+			);
+			path = ASI;
+			sourceTree = "<group>";
+		};
+		106691FD1816929700C03656 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				84946EBB17F047E7005D5052 /* HCHomeViewController.h */,
+				84946EBC17F047E7005D5052 /* HCHomeViewController.m */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		8455FA7317F169A100F053EE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8455FA7417F169B800F053EE /* HCReminderCell.h */,
+				8455FA7517F169B800F053EE /* HCReminderCell.m */,
+				8455FA7717F169C600F053EE /* HCReminderCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		846D3E7418129B92008AE97E /* Login&Reg */ = {
+			isa = PBXGroup;
+			children = (
+				846D3E7518129BB1008AE97E /* HCLoginViewController.h */,
+				846D3E7618129BB1008AE97E /* HCLoginViewController.m */,
+				846D3E7818129D6C008AE97E /* HCRegisterViewController.h */,
+				846D3E7918129D6C008AE97E /* HCRegisterViewController.m */,
+			);
+			name = "Login&Reg";
+			sourceTree = "<group>";
+		};
+		84946E7917F044BE005D5052 = {
+			isa = PBXGroup;
+			children = (
+				84946E8B17F044BF005D5052 /* 东方脉搏 */,
+				84946EAA17F044BF005D5052 /* 东方脉搏Tests */,
+				84946E8417F044BE005D5052 /* Frameworks */,
+				84946E8317F044BE005D5052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84946E8317F044BE005D5052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84946E8217F044BE005D5052 /* 东方脉搏.app */,
+				84946EA317F044BF005D5052 /* 东方脉搏Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84946E8417F044BE005D5052 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1034E28F18176AA0001DB075 /* CFNetwork.framework */,
+				1034E28D18176A96001DB075 /* MobileCoreServices.framework */,
+				1034E28B18176A8D001DB075 /* libxml2.dylib */,
+				1034E28918176A80001DB075 /* SystemConfiguration.framework */,
+				1034E28718176A71001DB075 /* libz.dylib */,
+				84946E8517F044BE005D5052 /* Foundation.framework */,
+				84946E8717F044BE005D5052 /* CoreGraphics.framework */,
+				84946E8917F044BF005D5052 /* UIKit.framework */,
+				84946EA417F044BF005D5052 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84946E8B17F044BF005D5052 /* 东方脉搏 */ = {
+			isa = PBXGroup;
+			children = (
+				1034E26618176933001DB075 /* 第三方 */,
+				1034E26218175F6A001DB075 /* api */,
+				8455FA7317F169A100F053EE /* Cells */,
+				84946E9417F044BF005D5052 /* HCAppDelegate.h */,
+				84946E9517F044BF005D5052 /* HCAppDelegate.m */,
+				84946E9717F044BF005D5052 /* Main.storyboard */,
+				84946EBA17F047CD005D5052 /* TopControllers */,
+				84946E9D17F044BF005D5052 /* Images.xcassets */,
+				84946E8C17F044BF005D5052 /* Supporting Files */,
+			);
+			path = "东方脉搏";
+			sourceTree = "<group>";
+		};
+		84946E8C17F044BF005D5052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84946E8D17F044BF005D5052 /* 东方脉搏-Info.plist */,
+				84946E8E17F044BF005D5052 /* InfoPlist.strings */,
+				84946E9117F044BF005D5052 /* main.m */,
+				84946E9317F044BF005D5052 /* 东方脉搏-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84946EAA17F044BF005D5052 /* 东方脉搏Tests */ = {
+			isa = PBXGroup;
+			children = (
+				84946EB017F044BF005D5052 /* ____Tests.m */,
+				84946EAB17F044BF005D5052 /* Supporting Files */,
+			);
+			path = "东方脉搏Tests";
+			sourceTree = "<group>";
+		};
+		84946EAB17F044BF005D5052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84946EAC17F044BF005D5052 /* 东方脉搏Tests-Info.plist */,
+				84946EAD17F044BF005D5052 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84946EBA17F047CD005D5052 /* TopControllers */ = {
+			isa = PBXGroup;
+			children = (
+				846D3E7418129B92008AE97E /* Login&Reg */,
+				84946EC117F05EC5005D5052 /* Menu&Tabs */,
+				106691FD1816929700C03656 /* 首页 */,
+				84946EBE17F052CD005D5052 /* HCHealthViewController.h */,
+				84946EBF17F052CD005D5052 /* HCHealthViewController.m */,
+				84946EC617F06310005D5052 /* HCDoctorViewController.h */,
+				84946EC717F06310005D5052 /* HCDoctorViewController.m */,
+				8455FA7017F1682E00F053EE /* HCReminderViewController.h */,
+				8455FA7117F1682E00F053EE /* HCReminderViewController.m */,
+			);
+			name = TopControllers;
+			sourceTree = "<group>";
+		};
+		84946EC117F05EC5005D5052 /* Menu&Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				84946E9A17F044BF005D5052 /* HCViewController.h */,
+				84946E9B17F044BF005D5052 /* HCViewController.m */,
+				84946EC317F05EEB005D5052 /* HCTabViewController.h */,
+				84946EC417F05EEB005D5052 /* HCTabViewController.m */,
+			);
+			name = "Menu&Tabs";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84946E8117F044BE005D5052 /* 东方脉搏 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84946EB417F044BF005D5052 /* Build configuration list for PBXNativeTarget "东方脉搏" */;
+			buildPhases = (
+				84946E7E17F044BE005D5052 /* Sources */,
+				84946E7F17F044BE005D5052 /* Frameworks */,
+				84946E8017F044BE005D5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "东方脉搏";
+			productName = "东方脉搏";
+			productReference = 84946E8217F044BE005D5052 /* 东方脉搏.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84946EA217F044BF005D5052 /* 东方脉搏Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84946EB717F044BF005D5052 /* Build configuration list for PBXNativeTarget "东方脉搏Tests" */;
+			buildPhases = (
+				84946E9F17F044BF005D5052 /* Sources */,
+				84946EA017F044BF005D5052 /* Frameworks */,
+				84946EA117F044BF005D5052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84946EA917F044BF005D5052 /* PBXTargetDependency */,
+			);
+			name = "东方脉搏Tests";
+			productName = "东方脉搏Tests";
+			productReference = 84946EA317F044BF005D5052 /* 东方脉搏Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84946E7A17F044BE005D5052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Reese@objcoder.com";
+				TargetAttributes = {
+					84946EA217F044BF005D5052 = {
+						TestTargetID = 84946E8117F044BE005D5052;
+					};
+				};
+			};
+			buildConfigurationList = 84946E7D17F044BE005D5052 /* Build configuration list for PBXProject "东方脉搏" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84946E7917F044BE005D5052;
+			productRefGroup = 84946E8317F044BE005D5052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84946E8117F044BE005D5052 /* 东方脉搏 */,
+				84946EA217F044BF005D5052 /* 东方脉搏Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84946E8017F044BE005D5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8455FA7817F169C600F053EE /* HCReminderCell.xib in Resources */,
+				84946E9E17F044BF005D5052 /* Images.xcassets in Resources */,
+				84946E9017F044BF005D5052 /* InfoPlist.strings in Resources */,
+				84946E9917F044BF005D5052 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84946EA117F044BF005D5052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84946EAF17F044BF005D5052 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84946E7E17F044BE005D5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84946EC817F06310005D5052 /* HCDoctorViewController.m in Sources */,
+				846D3E7A18129D6C008AE97E /* HCRegisterViewController.m in Sources */,
+				1034E27F18176941001DB075 /* ASIDataCompressor.m in Sources */,
+				8455FA7617F169B800F053EE /* HCReminderCell.m in Sources */,
+				1034E28518176941001DB075 /* ASINetworkQueue.m in Sources */,
+				84946EBD17F047E7005D5052 /* HCHomeViewController.m in Sources */,
+				84946E9C17F044BF005D5052 /* HCViewController.m in Sources */,
+				1034E28118176941001DB075 /* ASIDownloadCache.m in Sources */,
+				1034E28418176941001DB075 /* ASIInputStream.m in Sources */,
+				84946EC017F052CD005D5052 /* HCHealthViewController.m in Sources */,
+				1034E28618176941001DB075 /* Reachability.m in Sources */,
+				84946E9217F044BF005D5052 /* main.m in Sources */,
+				1034E27E18176941001DB075 /* ASIAuthenticationDialog.m in Sources */,
+				8455FA7217F1682E00F053EE /* HCReminderViewController.m in Sources */,
+				1034E28318176941001DB075 /* ASIHTTPRequest.m in Sources */,
+				846D3E7718129BB1008AE97E /* HCLoginViewController.m in Sources */,
+				84946E9617F044BF005D5052 /* HCAppDelegate.m in Sources */,
+				84946EC517F05EEB005D5052 /* HCTabViewController.m in Sources */,
+				1034E26518175FD4001DB075 /* HCHTTP.m in Sources */,
+				1034E28218176941001DB075 /* ASIFormDataRequest.m in Sources */,
+				1034E28018176941001DB075 /* ASIDataDecompressor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84946E9F17F044BF005D5052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84946EB117F044BF005D5052 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84946EA917F044BF005D5052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84946E8117F044BE005D5052 /* 东方脉搏 */;
+			targetProxy = 84946EA817F044BF005D5052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84946E8E17F044BF005D5052 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84946E8F17F044BF005D5052 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84946E9717F044BF005D5052 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84946E9817F044BF005D5052 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84946EAD17F044BF005D5052 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84946EAE17F044BF005D5052 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84946EB217F044BF005D5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84946EB317F044BF005D5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84946EB517F044BF005D5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "东方脉搏/东方脉搏-Prefix.pch";
+				INFOPLIST_FILE = "东方脉搏/东方脉搏-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84946EB617F044BF005D5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "东方脉搏/东方脉搏-Prefix.pch";
+				INFOPLIST_FILE = "东方脉搏/东方脉搏-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84946EB817F044BF005D5052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/东方脉搏.app/东方脉搏";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "东方脉搏/东方脉搏-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "东方脉搏Tests/东方脉搏Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84946EB917F044BF005D5052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/东方脉搏.app/东方脉搏";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "东方脉搏/东方脉搏-Prefix.pch";
+				INFOPLIST_FILE = "东方脉搏Tests/东方脉搏Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84946E7D17F044BE005D5052 /* Build configuration list for PBXProject "东方脉搏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84946EB217F044BF005D5052 /* Debug */,
+				84946EB317F044BF005D5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84946EB417F044BF005D5052 /* Build configuration list for PBXNativeTarget "东方脉搏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84946EB517F044BF005D5052 /* Debug */,
+				84946EB617F044BF005D5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84946EB717F044BF005D5052 /* Build configuration list for PBXNativeTarget "东方脉搏Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84946EB817F044BF005D5052 /* Debug */,
+				84946EB917F044BF005D5052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84946E7A17F044BE005D5052 /* Project object */;
+}
